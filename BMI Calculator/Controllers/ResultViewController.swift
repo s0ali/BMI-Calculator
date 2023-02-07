@@ -10,6 +10,8 @@ import UIKit
 class ResultViewController: UIViewController {
     
     var bmiString: String?
+    var advice: String?
+    var color: UIColor?
     
     @IBOutlet weak var bmiLable: UILabel!
     @IBOutlet weak var adviceLable: UILabel!
@@ -18,7 +20,8 @@ class ResultViewController: UIViewController {
         super.viewDidLoad()
 
         bmiLable.text = bmiString
-        
+        adviceLable.text = advice
+        view.backgroundColor = color
     }
     
     @IBAction func recalculatePressed(_ sender: UIButton) {
